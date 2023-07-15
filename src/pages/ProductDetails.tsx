@@ -36,7 +36,7 @@ export default function ProductDetails() {
               <li key={feature}>{feature}</li>
             ))}
           </ul>
-          <Button>Add to cart</Button>
+          <Button onClick={() => dispatch(addToCart(product))}>Add to cart</Button>
         </div>
       </div>
       <ProductReview />
