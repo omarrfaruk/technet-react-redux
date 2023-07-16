@@ -6,7 +6,7 @@ import { useToast } from '@/components/ui/use-toast';
 import { useAppDispatch, useAppSelector } from '@/redux/hooks';
 import { IProduct } from '@/types/globalTypes';
 import {setPriceRange,toggler} from"../redux/features/products/productSlice"
-import { useGetProductsQuery } from '@/redux/api/apiSlice';
+import { useGetProductsQuery } from '@/redux/features/products/productApi';
 
 export default function Products() {
   const {data} = useGetProductsQuery(undefined)
